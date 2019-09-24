@@ -1,0 +1,15 @@
+.div-box {
+    padding: 30px;
+    border: 1px solid black;
+    font-size: 18px;
+    background: salmon;
+    color: beige;
+}
+
+.div-box:hover {font-weight: bold;}
+
+.txtCenter {text-align: center;}
+
+input[type=text] {width: 250px;} 
+
+

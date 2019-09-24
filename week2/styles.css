@@ -1,0 +1,14 @@
+.box {
+    padding: 30px;
+    border: 1px solid black;
+    margin: 5px;
+    font-size: 18px;
+    color: #000;
+    text-shadow: 1.5px 0 #fff;
+}
+
+.box:hover {font-weight: bold;}
+
+.txtCenter {text-align: center;}
+
+input[type=text] {width: 250px;} 

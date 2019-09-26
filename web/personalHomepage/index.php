@@ -11,7 +11,7 @@
 
 <body>
     <nav id="navbar">
-        <a href="#welcome-section">About Me</a>
+        <a href="#aboutMe">About Me</a>
         <a href="#projects" id="navEnd">Assignments</a>
     </nav>
 
@@ -36,10 +36,7 @@
             </h2>
 
             <div class="aboutMeContainer">
-                <h3 class="aboutMeHeader">Welcome to my homepage for CS 313 - Web Engineering II. <br>
-                    <span id="scroll">Scroll further to see my assignments or click "Assignments" on the navbar</span>
-                </h3>
-
+                <h3 class="aboutMeHeader">Welcome to my homepage for CS 313 - Web Engineering II. </h3>
                 <p>
                     I began my journey as a developer the winter of 2017. I had always been interested in “computer stuff”
                 but never had the time or opportunity to learn it. That led me to a huge decision when it came to choose

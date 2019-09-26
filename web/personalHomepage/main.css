@@ -85,7 +85,6 @@ main {
 ***************************************/
 #aboutMe {
     margin-bottom: -18px;
-    
 }
 
 .aboutMeHeader {
@@ -99,10 +98,10 @@ main {
     background: rgb(38, 136, 128);
 }
 
-#scroll {
-    color: #910a0a;
-    font-weight: bold
+.aboutMeContainer p {
+    padding: 10px 0;
 }
+
 
 /***************************************
 * Projects Section

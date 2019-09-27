@@ -61,19 +61,19 @@
 
             <div id="photo-grid">
                 <div class="photo-tile">
-                    <img src="images/Danny.jpg" alt="My Son Danny">
+                    <img src="images/Danny-min.jpg" alt="My Son Danny">
                 </div>
 
                 <div class="photo-tile">
-                    <img src="images/Jake-RZR.jpg" alt="Myself in a RZR">
+                    <img src="images/Jake-RZR-min.jpg" alt="Myself in a RZR">
                 </div>
 
                 <div class="photo-tile">
-                    <img src="images/Jessi-Danny.jpg" alt="My Wife and Son">
+                    <img src="images/Jessi-Danny-min.jpg" alt="My Wife and Son">
                 </div>
 
                 <div class="photo-tile">
-                    <img src="images/Family.jpg" alt="Our Family">
+                    <img src="images/Family-min.jpg" alt="Our Family">
                 </div>
 
             </div>

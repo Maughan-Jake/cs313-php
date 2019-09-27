@@ -102,6 +102,18 @@ main {
     padding: 10px 0;
 }
 
+/***************************************
+* Photos Section
+***************************************/
+#photo-grid {
+    display: grid;
+    grid-gap: 20px;
+    align-items: stretch;
+}
+
+#photo-grid img {
+    width: 100%;
+}
 
 /***************************************
 * Projects Section
@@ -138,7 +150,7 @@ main hr {
     border-bottom-right-radius: 10px;
 }
 
-img {
+#projects-grid img {
     width: 100%;
     margin: 0;
     padding: 0 0 10px 0;
@@ -174,10 +186,18 @@ main a {
 .date {
     text-align: center;
 }
+
+/***************************************
+* Media Queries
+***************************************/
 @media (min-width: 450px) {
     #projects-grid {
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         grid-gap: 20px 40px;
+    }
+
+    #photo-grid {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     }
 }
 

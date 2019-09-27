@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <nav id="navbar">
+<nav id="navbar">
         <a href="#aboutMe">About Me</a>
-        <a href="#projects" id="navEnd">Assignments</a>
+        <a href="assignments.php" id="navEnd">Assignments</a>
     </nav>
 
     <main>
@@ -50,53 +50,30 @@
                     and we have the most adorable (I am definitely biased) son on earth!
                 </p>
 
-
-            </div>
-        </section>
-        <section id="projects">
+                <hr>
+                <section id="family-photos">
             <h2>
                 <span class="coding-text" id="h2-start">&lt;h2&gt;</span>
-                These are some of my class projects
+                Here are some family photos
                 <span class="coding-text" id="h2-end">&lt;/h2&gt;</span>
             </h2>
-            <hr>
+            
 
-            <div id="projects-grid">
-
-                <div class="project-tile">
-                    <a href=""
-                        target="_blank">
-                        <img src="images/hiclipart.com-id_maviw.png" alt="Coming Soon Stamp">
-                        <h3 class="projectDescription">
-                            <span class="code">&lt;</span>
-                            Shopping Cart
-                            <span class="code">/&gt;</span>
-                        </h3>
-                    </a>
+            <div id="photo-grid">
+                <div class="photo-tile">
+                    <img src="images/Danny.jpg" alt="My Son Danny">
                 </div>
 
-                <div class="project-tile">
-                    <a href=""
-                        target="_blank">
-                        <img src="images/hiclipart.com-id_maviw.png" alt="Coming Soon Stamp">
-                        <h3 class="projectDescription">
-                            <span class="code">&lt;</span>
-                            Coming Soon
-                            <span class="code">/&gt;</span>
-                        </h3>
-                    </a>
+                <div class="photo-tile">
+                    <img src="images/Jake-RZR.jpg" alt="Myself in a RZR">
                 </div>
 
-                <div class="project-tile">
-                    <a href=""
-                        target="_blank">
-                        <img src="images/hiclipart.com-id_maviw.png" alt="Coming Soon Stamp">
-                        <h3 class="projectDescription">
-                            <span class="code">&lt;</span>
-                            Coming Soon
-                            <span class="code">/&gt;</span>
-                        </h3>
-                    </a>
+                <div class="photo-tile">
+                    <img src="images/Jessi-Danny.jpg" alt="My Wife and Son">
+                </div>
+
+                <div class="photo-tile">
+                    <img src="images/Family.jpg" alt="Our Family">
                 </div>
 
             </div>

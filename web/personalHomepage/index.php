@@ -60,9 +60,7 @@
             
 
             <div id="photo-grid">
-                <div class="photo-tile">
-                    <img src="images/Danny-min.jpg" alt="My Son Danny">
-                </div>
+                
 
                 <div class="photo-tile">
                     <img src="images/Jake-RZR-min.jpg" alt="Myself in a RZR">
@@ -76,6 +74,9 @@
                     <img src="images/Family-min.jpg" alt="Our Family">
                 </div>
 
+                <div class="photo-tile">
+                    <img src="images/Danny-min.jpg" alt="My Son Danny">
+                </div>
             </div>
         </section>
     </main>

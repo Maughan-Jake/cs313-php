@@ -18,7 +18,7 @@ $db = dbConnect();
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="items-list.php">Search</a></li>
+                <li><a href="find-items.php">Search</a></li>
                 <li><a href="add-item.php">Create</a></li>
             </ul>
         </nav>
@@ -31,23 +31,19 @@ $db = dbConnect();
     <div id="col-1">
         <h2>Motorcycles</h2>
         <ul>
-        <!-- Insert php for items from each category here -->
-        <?php
-        $statement = $db->prepare("SELECT id, name, price FROM inventory WHERE category_id=1");
-        $statement->execute();
-        // Go through each result
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-        {
-            // The variable "row" now holds the complete record for that
-            // row, and we can access the different values based on their
-            // name
-            $name = $row['name'];
-            $price = $row['price'];
-            echo "<li>";
-            echo '<a href="item-details.php?id=' . $row['id'] . '">';
-            echo "><strong>$name</strong> - \"$$price\"</a></li>";
-        }
-        ?>
+            <?php
+            $statement = $db->prepare("SELECT id, name, price FROM inventory WHERE category_id=1");
+            $statement->execute();
+            // Go through each result
+            while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+            {
+                $name = $row['name'];
+                $price = $row['price'];
+                echo "<li>";
+                echo '<a href="item-details.php?id=' . $row['id'] . '">';
+                echo "<strong>$name</strong> - \"$$price\"</a></li>";
+            }
+            ?>
         </ul>
 
     </div>
@@ -57,19 +53,18 @@ $db = dbConnect();
         <ul>
         <!-- Insert php for items from each category here -->
         <?php
-        $statement = $db->prepare("SELECT name, price FROM inventory WHERE category_id=2");
-        $statement->execute();
-        // Go through each result
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-        {
-            // The variable "row" now holds the complete record for that
-            // row, and we can access the different values based on their
-            // name
-            $name = $row['name'];
-            $price = $row['price'];
-            echo "<li><strong>$name</strong> - \"$$price\"</li>";
-        }
-        ?>
+            $statement = $db->prepare("SELECT id, name, price FROM inventory WHERE category_id=2");
+            $statement->execute();
+            // Go through each result
+            while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+            {
+                $name = $row['name'];
+                $price = $row['price'];
+                echo "<li>";
+                echo '<a href="item-details.php?id=' . $row['id'] . '">';
+                echo "<strong>$name</strong> - \"$$price\"</a></li>";
+            }
+            ?>
         </ul>
     </div>
 
@@ -78,19 +73,18 @@ $db = dbConnect();
         <ul>
         <!-- Insert php for items from each category here -->
         <?php
-        $statement = $db->prepare("SELECT name, price FROM inventory WHERE category_id=3");
-        $statement->execute();
-        // Go through each result
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-        {
-            // The variable "row" now holds the complete record for that
-            // row, and we can access the different values based on their
-            // name
-            $name = $row['name'];
-            $price = $row['price'];
-            echo "<li><strong>$name</strong> - \"$$price\"</li>";
-        }
-        ?>
+            $statement = $db->prepare("SELECT id, name, price FROM inventory WHERE category_id=3");
+            $statement->execute();
+            // Go through each result
+            while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+            {
+                $name = $row['name'];
+                $price = $row['price'];
+                echo "<li>";
+                echo '<a href="item-details.php?id=' . $row['id'] . '">';
+                echo "<strong>$name</strong> - \"$$price\"</a></li>";
+            }
+            ?>
         </ul>
 
     </div>

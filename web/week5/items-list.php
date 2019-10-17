@@ -17,9 +17,8 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 foreach ($rows as $row)
 {
-  //<b>John 3:16</b> - "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life."
   echo '<p>';
-  echo '<a href="scripture-details.php?id=' . $row['id'] . '">';
+  echo '<a href="item-details.php?id=' . $row['id'] . '">';
   echo '<b>' . $row['name'] . ' ' . $row['description'] . ':' . $row['price'] . '</b>';
   echo '</a>';
   echo '</p>';

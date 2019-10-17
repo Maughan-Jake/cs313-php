@@ -11,15 +11,15 @@ dbConnect();
 <?php
 
 // Select ONE scripture with id=?
-$stmt = $db->prepare('select * from Scriptures WHERE id=:scriptureId');
-$stmt->bindValue(':scriptureId', $_GET['id'], PDO::PARAM_INT);
+$stmt = $db->prepare('select * from inventory WHERE id=:id');
+$stmt->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
 $stmt->execute();
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC); //another function that get only 1
 
 foreach ($rows as $row)
 {
     echo '<p>';
-    echo '<b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b>';
+    echo '<b>' . $row['name'] . ' ' . $row['description'] . ':' . $row['price'] . '</b>';
     echo ' - "' . $row['content'] . '"';
     echo '</p>';
 }

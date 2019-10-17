@@ -5,7 +5,7 @@ $db = dbConnect();
 
 ?>
 
-<h1>item Details</h1>
+<h1>Item Details</h1>
 
 <?php
 

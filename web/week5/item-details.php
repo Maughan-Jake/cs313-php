@@ -1,8 +1,7 @@
 <?php
 
 require "db-connect.php";
-
-dbConnect();
+$db = dbConnect();
 
 ?>
 

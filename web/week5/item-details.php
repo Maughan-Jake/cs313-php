@@ -1,6 +1,6 @@
 <?php
 
-require_once 'db-connect.php';
+require "db-connect.php";
 
 dbConnect();
 

@@ -1,6 +1,6 @@
 <?php
 
-require_once 'db-connect.php';
+require "db-connect.php";
 
 dbConnect();
 
@@ -33,3 +33,8 @@ Book: <input type="text" name="name">
 <br/>
 <input type="submit" value="Search">
 </form>
+<?php
+
+dbConnect();
+
+?>

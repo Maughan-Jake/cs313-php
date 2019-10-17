@@ -43,7 +43,7 @@ $db = dbConnect();
             // name
             $name = $row['name'];
             $price = $row['price'];
-            echo "<li><strong>$name</strong> - \"$price\"<li>";
+            echo "<li><strong>$name</strong> - \"$price\"</li>";
         }
         ?>
         </ul>
@@ -65,7 +65,7 @@ $db = dbConnect();
             // name
             $name = $row['name'];
             $price = $row['price'];
-            echo "<li><strong>$name</strong> - \"$price\"<li>";
+            echo "<li><strong>$name</strong> - \"$price\"</li>";
         }
         ?>
         </ul>
@@ -86,7 +86,7 @@ $db = dbConnect();
             // name
             $name = $row['name'];
             $price = $row['price'];
-            echo "<li><strong>$name</strong> - \"$price\"<li>";
+            echo "<li><strong>$name</strong> - \"$price\"</li>";
         }
         ?>
         </ul>

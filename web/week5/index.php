@@ -43,7 +43,7 @@ $db = dbConnect();
             // name
             $name = $row['name'];
             $price = $row['price'];
-            echo "<li><strong>$name</strong> - \"$name\"<li>";
+            echo "<li><strong>$name</strong> - \"$price\"<li>";
         }
         ?>
         </ul>
@@ -65,7 +65,7 @@ $db = dbConnect();
             // name
             $name = $row['name'];
             $price = $row['price'];
-            echo "<li><strong>$name</strong> - \"$name\"<li>";
+            echo "<li><strong>$name</strong> - \"$price\"<li>";
         }
         ?>
         </ul>
@@ -76,7 +76,7 @@ $db = dbConnect();
         <ul>
         <!-- Insert php for items from each category here -->
         <?php
-        $statement = $db->prepare("SELECT name, price FROM inventory WHERE category_id=2");
+        $statement = $db->prepare("SELECT name, price FROM inventory WHERE category_id=3");
         $statement->execute();
         // Go through each result
         while ($row = $statement->fetch(PDO::FETCH_ASSOC))
@@ -86,7 +86,7 @@ $db = dbConnect();
             // name
             $name = $row['name'];
             $price = $row['price'];
-            echo "<li><strong>$name</strong> - \"$name\"<li>";
+            echo "<li><strong>$name</strong> - \"$price\"<li>";
         }
         ?>
         </ul>

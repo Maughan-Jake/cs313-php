@@ -26,8 +26,6 @@ $db = dbConnect();
 
     <h1>Jakes List</h1>
 
-    
-
     <div id="col-1">
         <h2>Motorcycles</h2>
         <ul>

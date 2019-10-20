@@ -37,6 +37,7 @@ $db = dbConnect();
   </form>
 
   <div id="search-results">
+    <h2>Results</h2>
     <ul>
       <?php
       // Search Scriptures from a Book

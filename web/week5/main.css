@@ -162,4 +162,8 @@ input[type=text], input[type=number], input[type=textarea], select {
     background: #bf4e30;
     color: #e5eafa;
     font-size: 48px;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 5px;
 }

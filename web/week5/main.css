@@ -133,3 +133,25 @@ input[type=text], input[type=number], input[type=textarea], select {
     margin: 15px;
     padding: 10px;
 }
+
+/****************************************************
+ Details Page
+****************************************************/
+#item-description {
+    display: grid;
+    grid-template-rows: repear(3, 1fr);
+    background: #1f363d;
+}
+
+.title {
+    text-align: center;
+    color: #bf4e30;
+}
+
+.description {
+    color: #e5eafa;
+}
+
+.price-box {
+    
+}

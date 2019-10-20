@@ -27,7 +27,7 @@ $db = dbConnect();
 
     <h1>Details</h1>
 
-    <div>
+    <div id="item-description">
         <?php
             $stmt = $db->prepare('select * from inventory WHERE id=:id');
             $stmt->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
@@ -36,7 +36,7 @@ $db = dbConnect();
 
             foreach ($rows as $row)
             {
-                echo '<h3>' . $row['name'] . '</h3>';
+                echo '<h3 class="title>' . $row['name'] . '</h3>';
                 echo '<p class="description">' . $row['description'] . '</p>';
                 echo '<p class="price-box">' . $row['price']  . '</p>';
                 // join the tables so I can also echo the seller name and email as contact info

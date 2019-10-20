@@ -125,5 +125,11 @@ input[type=text], input[type=number], input[type=text-area], select {
  Search Page
 ****************************************************/
 #search-results {
+    padding: 20px;
+    text-align: center;
+}
 
+#search-results li {
+    margin: 15px;
+    padding: 10px;
 }

@@ -78,7 +78,7 @@ h1 {
 
 /* Forms */
 
-input[type=text], select {
+input[type=text], input[type=number], input[type=text-area], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -86,6 +86,10 @@ input[type=text], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+  }
+
+  input[type=text-area] {
+    height: 15%;
   }
   
   input[type=submit] {

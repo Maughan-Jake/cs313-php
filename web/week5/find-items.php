@@ -32,27 +32,31 @@ $db = dbConnect();
        <input type="text" name="name" id="name">
     </label>
     <br/>
-    
+
     <input type="submit" value="Search" name="search" id="search">
   </form>
 
-  <?php
-  // Search Scriptures from a Book
-  $stmt = $db->prepare('select * from inventory WHERE name=:name');
-  $stmt->bindValue(':name', $_GET['name'], PDO::PARAM_STR);
-  $stmt->execute();
-  $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+  <div>
+    <ul>
+      <?php
+      // Search Scriptures from a Book
+      $stmt = $db->prepare('select * from inventory WHERE name=:name');
+      $stmt->bindValue(':name', $_GET['name'], PDO::PARAM_STR);
+      $stmt->execute();
+      $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-  foreach ($rows as $row)
-  {
-    echo '<p>';
-    echo '<a href="item-details.php?id=' . $row['id'] . '">';
-    echo '<b>' . $row['name'] . ' ' . $row['description'] . ':' . $row['price'] . '</b>';
-    echo '</a>';
-    echo '</p>';
-  }
+      foreach ($rows as $row)
+      {
+        echo '<li>';
+        echo '<a href="item-details.php?id=' . $row['id'] . '">';
+        echo '<b>' . $row['name'] . ' - ' . $row['price'] . '</b>';
+        echo '</a>';
+        echo '</li>';
+      }
 
-  ?>
+      ?>
+    </ul>
+  </div>
 
 </body>
 </html>

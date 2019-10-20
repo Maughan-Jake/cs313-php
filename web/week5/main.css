@@ -33,6 +33,7 @@ nav li a:hover {
 
 h1 {
     text-align: center;
+    padding: 15px 0;
 }
 
 #grid {
@@ -45,18 +46,23 @@ h1 {
 }
 
 #grid div {
-    background: bisque;
+    background: #1f363d;
 }
 
 #grid div h2 {
     text-align: center;
+    color: #bf4e30;
 }
 #grid li a {
-    color: slategray;
+    color: #e5eafa;
     text-decoration: none;
 }
 #grid li {
     list-style-type: none;
     margin: 5px 10px;
     padding: 5px;
+}
+
+#grid li:hover {
+    color: #bf4e30;
 }

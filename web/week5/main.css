@@ -36,6 +36,18 @@ nav li a:hover {
     grid-template-columns: repeat(3, 1fr);
 }
 
+#grid div ul {
+    padding-left: 0;
+}
+
+#grid div {
+    background: #333;
+    
+}
+#grid li a {
+    color: aliceblue;
+    text-decoration: none;
+}
 #grid li {
     list-style-type: none;
     margin: 5px 10px;

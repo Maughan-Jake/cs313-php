@@ -147,6 +147,7 @@ input[type=text], input[type=number], input[type=textarea], select {
     text-align: center;
     color: #bf4e30;
     font-size: 48px;
+    margin: 10px auto 5px auto;
 }
 
 #description-text {

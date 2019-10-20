@@ -25,21 +25,23 @@ $db = dbConnect();
         </nav>
         </header>  
 
-    <h1>Item Details</h1>
+    <h1>Details</h1>
 
-    <?php
-        $stmt = $db->prepare('select * from inventory WHERE id=:id');
-        $stmt->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
-        $stmt->execute();
-        $rows = $stmt->fetchAll(PDO::FETCH_ASSOC); //another function that get only 1
+    <div>
+        <?php
+            $stmt = $db->prepare('select * from inventory WHERE id=:id');
+            $stmt->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
+            $stmt->execute();
+            $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-        foreach ($rows as $row)
-        {
-            echo '<p>';
-            echo '<b>' . $row['name'] . ' ' . $row['description'] . ':' . $row['price'] . '</b>';
-            echo ' - "' . $row['content'] . '"';
-            echo '</p>';
-        }
-    ?>
+            foreach ($rows as $row)
+            {
+                echo '<h3>' . $row['name'] . '</h3>';
+                echo '<p class="description">' . $row['description'] . '</p>';
+                echo '<p class="price-box">' . $row['price']  . '</p>';
+                // join the tables so I can also echo the seller name and email as contact info
+            }
+        ?>
+    </div>
 </body>
 </html>

@@ -168,4 +168,5 @@ input[type=text], input[type=number], input[type=textarea], select {
     margin: 10px auto 25px auto;
     border-radius: 15px;
     padding: 5px;
+    text-align: center;
 }

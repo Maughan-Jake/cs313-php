@@ -1,4 +1,6 @@
-
+/****************************************************
+ General
+****************************************************/
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 body {
@@ -14,6 +16,9 @@ h1, section, div, form {
     margin: 0 10px;
 }
 
+/****************************************************
+ Navigation
+****************************************************/
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -34,7 +39,6 @@ nav li a {
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 nav li a:hover {
     background-color: #bf4e30;
 }
@@ -45,16 +49,19 @@ h1 {
     color:#e5eafa;
 }
 
+/****************************************************
+ MainGrid and Items
+****************************************************/
 #grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-#grid div ul {
+#grid div ul, #search-results ul{
     padding-left: 0;
 }
 
-#grid div {
+#grid div, #search-results {
     background: #1f363d;
 }
 
@@ -62,22 +69,23 @@ h1 {
     text-align: center;
     color: #bf4e30;
 }
-#grid li a {
+#grid li a, #search-results li a {
     color: #e5eafa;
     text-decoration: none;
 }
-#grid li {
+#grid li, #search-results li {
     list-style-type: none;
     margin: 5px 10px;
     padding: 5px;
 }
 
-#grid li a:hover {
+#grid li a:hover, #search-results li a:hover{
     color: #bf4e30;
 }
 
-/* Forms */
-
+/****************************************************
+ Forms
+****************************************************/
 input[type=text], input[type=number], input[type=text-area], select {
     width: 100%;
     padding: 12px 20px;
@@ -112,3 +120,10 @@ input[type=text], input[type=number], input[type=text-area], select {
     background-color: #f2f2f2;
     padding: 20px;
   }
+
+/****************************************************
+ Search Page
+****************************************************/
+#search-results {
+
+}

@@ -28,7 +28,7 @@ $db = dbConnect();
   <h1>Search JakesList</h1>
 
   <form>
-    <label for="name">Item:
+    <label for="name">Search JakesList for:
        <input type="text" name="name" id="name">
     </label>
     <br/>
@@ -36,7 +36,7 @@ $db = dbConnect();
     <input type="submit" value="Search" name="search" id="search">
   </form>
 
-  <div>
+  <div id="search-results">
     <ul>
       <?php
       // Search Scriptures from a Book

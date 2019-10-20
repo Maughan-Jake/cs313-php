@@ -146,6 +146,12 @@ input[type=text], input[type=number], input[type=textarea], select {
 .title {
     text-align: center;
     color: #bf4e30;
+    font-size: 48px;
+}
+
+#description-text {
+    height: 100%;
+    margin: 10px auto;
 }
 
 .description {
@@ -153,5 +159,7 @@ input[type=text], input[type=number], input[type=textarea], select {
 }
 
 .price-box {
-    
+    background: #bf4e30;
+    color: #e5eafa;
+    font-size: 48px;
 }

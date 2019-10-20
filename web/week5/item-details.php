@@ -37,7 +37,9 @@ $db = dbConnect();
             foreach ($rows as $row)
             {
                 echo '<h3 class="title">' . $row['name'] . '</h3>';
+                echo '<div id="description-text">';
                 echo '<p class="description">' . $row['description'] . '</p>';
+                echo '</div>';
                 echo '<p class="price-box">' . $row['price']  . '</p>';
                 // join the tables so I can also echo the seller name and email as contact info
             }

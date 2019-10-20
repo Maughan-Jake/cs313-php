@@ -50,7 +50,7 @@
                 </select>
             </label>
 
-            <button type="submit" ></button>
+            <button type="submit"> Add item to JakesList</button>
     </form>
 
 

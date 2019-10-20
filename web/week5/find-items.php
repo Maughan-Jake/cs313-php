@@ -28,9 +28,12 @@ $db = dbConnect();
   <h1>Search JakesList</h1>
 
   <form>
-    Item: <input type="text" name="name">
+    <label for="name">Item:
+       <input type="text" name="name" id="name">
+    </label>
     <br/>
-    <input type="submit" value="Search">
+    
+    <input type="submit" value="Search" name="search" id="search">
   </form>
 
   <?php

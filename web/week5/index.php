@@ -39,7 +39,7 @@ $db = dbConnect();
                 $price = $row['price'];
                 echo "<li>";
                 echo '<a href="item-details.php?id=' . $row['id'] . '">';
-                echo "<strong>$name</strong> - \"$$price\"</a></li>";
+                echo "<strong>$name</strong> - $$price</a></li>";
             }
             ?>
         </ul>

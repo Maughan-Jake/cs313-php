@@ -1,0 +1,17 @@
+insert into inventory (name, description, price, customer_id, category_id) values ('BMW S 1000 RR', 'The RSV4 has long been one of our favorite superbikes in the world! but this one’s gonna be a bit special because it could be yours!', 1727.79, 18, 1);
+insert into inventory (name, description, price, customer_id, category_id) values ('Indian FTR 1200', 'Selling my 2017 pristine condition Indian baby. The wife is making me get rid of it so my loss, your gain', 1781.79, 20, 1);
+insert into inventory (name, description, price, customer_id, category_id) values ('Suzuki Katana', 'The bikes name is accurate. You get on this baby and you become the weapon of mass fun. Contact me today to make it yours.', 566.74, 22, 1);
+insert into inventory (name, description, price, customer_id, category_id) values ('Ducati Diavel 1260', 'One word. Ducati. Come check out this beautiful bike and maybe just maybe, fate will be in your favor!', 5771.23, 15, 1);
+insert into inventory (name, description, price, customer_id, category_id) values ('Yamaha YZF-R3', 'Brrraaaaaaap, braaaaaap. Those will be the sounds you here once you come take this pristine bike off my hands. ', 4409.06, 13, 1);
+
+insert into inventory (name, description, price, customer_id, category_id) values ('McLaren 720S', 'I wrecked this bad boy last month and dont have the time or will to get it fix. Mechanics special', 5384.64, 10, 2);
+insert into inventory (name, description, price, customer_id, category_id) values ('Ferrari F8 Tributo', 'It runs. Need I say more? Who in their right mind would pass up owning a Ferrari?', 5089.08, 4, 2);
+insert into inventory (name, description, price, customer_id, category_id) values ('Lamborghini Huracan Evo', 'Yep, you read that right. I am giving my Lamborghini away to one lucky man who can stomach the speed', 2447.26, 4, 2);
+insert into inventory (name, description, price, customer_id, category_id) values ('Ford GT', 'MERICA! You want an American made supercare? I have you covered. Come take a look today!', 1315.69, 8, 2);
+insert into inventory (name, description, price, customer_id, category_id) values ('Lamborghini Aventador SVJ', 'Feast your eyes on a real Lamborghini. I am selling this piece of art because I just ordered 2 new ones and dont have space in my 16 care garage.', 1142.04, 15, 2);
+
+insert into inventory (name, description, price, customer_id, category_id) values ('Yeti SB100', 'This bike is made especially for woman who want to shred the trail. I got a new bike and dont have room for 2!', 2962.19, 2, 3);
+insert into inventory (name, description, price, customer_id, category_id) values ('Santa Cruz Tallboy', 'Want to shred the trails at an affordable price? Well look no further! I am selling my gently used Tallboy is size L to the first person that shows up with cash.', 1240.2, 5, 3);
+insert into inventory (name, description, price, customer_id, category_id) values ('Niner Rip 9 RDO', '27.5 inch monster that will carry you down any trail? I was given an E-bike and this baby needs a new home', 5555.01, 18, 3);
+insert into inventory (name, description, price, customer_id, category_id) values ('Norco Revolver', 'The trailbike of your dreams! with 120mm suspencion up fron and 100mm out back you will be climbing like never before', 4670.68, 17, 3);
+insert into inventory (name, description, price, customer_id, category_id) values ('Trek Fuel', 'Support your local bike shop and come down to Beanie Beats Bike Doctor for this gently used bike!', 4128.63, 17, 3);

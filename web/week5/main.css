@@ -31,6 +31,10 @@ nav li a:hover {
     background-color: #111;
 }
 
+h1 {
+    text-align: center;
+}
+
 #grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -41,11 +45,14 @@ nav li a:hover {
 }
 
 #grid div {
-    background: #333;
-    
+    background: bisque;
+}
+
+#grid div h2 {
+    text-align: center;
 }
 #grid li a {
-    color: aliceblue;
+    color: slategray;
     text-decoration: none;
 }
 #grid li {

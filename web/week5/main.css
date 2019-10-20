@@ -97,7 +97,7 @@ input[type=text], input[type=number], input[type=textarea], select {
   }
 
   input[type=textarea] {
-    height: 15%;
+    height: 50px;
   }
   
   input[type=submit] {

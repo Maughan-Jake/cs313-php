@@ -23,17 +23,17 @@
     <form action="">
         <!-- Name -->
             <label for="itemName"> Item Name:
-            <input type="text" name="itemName" id="itemName">
+            <input type="text" name="itemName" id="itemName" placeholder="e.g 2012 Honda Accord">
             </label>
             <br>
         <!-- Description -->
             <label for="description"> Description:
-            <input type="textarea" name="description" id="description">
+            <input type="textarea" name="description" id="description" placeholder="e.g Perfect for a colege student. Gently used. etc...">
             </label>
             <br>
         <!-- Price -->
             <label for="price"> Price:
-            <input type="number" name="price" id="price" step="0.01">
+            <input type="number" name="price" id="price" step="0.01" placeholder="6800.99">
             </label>
             <br>
         <!-- Customer_id -->

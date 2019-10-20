@@ -18,8 +18,8 @@ $db = dbConnect();
   <header>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="find-items.php">Search</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="#">Search</a></li>
             <li><a href="add-item.php">Create</a></li>
         </ul>
     </nav>

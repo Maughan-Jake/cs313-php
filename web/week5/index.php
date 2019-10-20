@@ -27,6 +27,7 @@ $db = dbConnect();
 
     <h1>Jakes List</h1>
 
+    <section id="grid">
     <div id="col-1">
         <h2>Motorcycles</h2>
         <ul>
@@ -87,6 +88,7 @@ $db = dbConnect();
         </ul>
 
     </div>
+    </section>
 
 </body>
 </html>

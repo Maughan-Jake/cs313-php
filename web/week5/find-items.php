@@ -40,7 +40,6 @@ $db = dbConnect();
     <h2>Results</h2>
     <ul>
       <?php
-      // Search Scriptures from a Book
       $stmt = $db->prepare('select * from inventory WHERE name=:name');
       $stmt->bindValue(':name', $_GET['name'], PDO::PARAM_STR);
       $stmt->execute();

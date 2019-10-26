@@ -29,7 +29,7 @@ $db = dbConnect();
 
     <div id="item-description">
         <?php
-            $stmt = $db->prepare('select * FROM customer WHERE id=:id');
+            $stmt = $db->prepare('select * from inventory WHERE id=:id');
             $stmt->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
             $stmt->execute();
             $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -39,10 +39,8 @@ $db = dbConnect();
                 echo '<h3 class="title">' . $row['name'] . '</h3>';
                 echo '<div id="description-text">';
                 echo '<p class="description">' . $row['description'] . '</p>';
-                // echo '<p>' . $row['first_name'] . ' ' . $row['last_name'] . ' ' . $row['email'] . '</p>';
                 echo '</div>';
                 echo '<p class="price-box">' . $row['price']  . '</p>';
-                
                 // join the tables so I can also echo the seller name and email as contact info
             }
         ?>

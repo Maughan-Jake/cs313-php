@@ -39,7 +39,7 @@ $db = dbConnect();
                 echo '<h3 class="title">' . $row['name'] . '</h3>';
                 echo '<div id="description-text">';
                 echo '<p class="description">' . $row['description'] . '</p>';
-                echo '<p>' . $row['first_name'] . ' ' . $row['last_name'] . ' ' . $row['email'] . '</p>';
+                // echo '<p>' . $row['first_name'] . ' ' . $row['last_name'] . ' ' . $row['email'] . '</p>';
                 echo '</div>';
                 echo '<p class="price-box">' . $row['price']  . '</p>';
                 

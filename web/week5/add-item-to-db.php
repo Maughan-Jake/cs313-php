@@ -1,9 +1,9 @@
 <?php
 
 $name = filter_input(INPUT_POST, 'itemName', FILTER_SANITIZE_STRING);
-$description = filter_input(INPUT_POST, 'itemDescription', FILTER_SANATIZE_STRING);
-$price = filter_input(INPUT_POST, 'price', FILTER_SANATIZE_NUMBER_FLOAT);
-$category = filter_input(INPUT_POST, 'category', FILTER_SANATIZE_STRING);
+$description = filter_input(INPUT_POST, 'description', FILTER_SANITIZE_STRING);
+$price = filter_input(INPUT_POST, 'price', FILTER_SANITIZE_NUMBER_FLOAT);
+$category = filter_input(INPUT_POST, 'category', FILTER_SANITIZE_STRING);
 
 // if (
 //     empty($name) || empty($description) || empty($price) || empty($category)

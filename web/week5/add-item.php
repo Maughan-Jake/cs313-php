@@ -23,17 +23,17 @@
     <form action="add-item-to-db.php" method="post"> 
         <!-- Name -->
             <label for="itemName"> Item Name:
-            <input type="text" name="itemName" id="itemName" placeholder="e.g 2012 Honda Accord">
+            <input type="text" name="itemName" id="itemName" placeholder="e.g 2012 Honda Accord" required>
             </label>
             <br>
         <!-- Description -->
             <label for="description"> Description:
-            <input type="textarea" name="description" id="description" placeholder="e.g Perfect for a colege student. Gently used. etc...">
+            <input type="textarea" name="description" id="description" placeholder="e.g Perfect for a colege student. Gently used. etc..." required>
             </label>
             <br>
         <!-- Price -->
             <label for="price"> Price:
-            <input type="number" name="price" id="price" step="0.01" placeholder="6800.99">
+            <input type="number" name="price" id="price" step="0.01" placeholder="e.g 6800.99" required>
             </label>
             <br>
             <label for="category"> Category

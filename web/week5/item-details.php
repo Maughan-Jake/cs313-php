@@ -31,7 +31,7 @@ $db = dbConnect();
         <?php
             $stmt = $db->prepare('select inventory.name, inventory.description, inventory.price, customer.first_name,
             customer.last_name, customer.email
-            FROM cusomers
+            FROM customer
             INNER JOIN inventory ON customer_id = customer.id WHERE id=:id');
             $stmt->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
             $stmt->execute();

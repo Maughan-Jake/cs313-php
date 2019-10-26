@@ -49,7 +49,7 @@ require "db-connect.php";
 $db = dbConnect();
 
 $sql = 'INSERT INTO inventory (name, description, price, category_id) 
-          VALUES(:name, :description, :price, :categoryID)';
+        VALUES(:name, :description, :price, :categoryID)';
     $stmt = $db->prepare($sql);
     
     $stmt->bindValue(':name', $name. PDO::PARAM_STR);

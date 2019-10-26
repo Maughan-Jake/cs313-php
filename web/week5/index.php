@@ -25,6 +25,12 @@ $db = dbConnect();
         </nav>
     </header>    
 
+    <?php
+                if (isset($message)) {
+                    echo $message;
+                    }
+            ?>
+
     <h1>Jakes List</h1>
 
     <section id="grid">

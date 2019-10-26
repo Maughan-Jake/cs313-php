@@ -1,27 +1,47 @@
 <?php
 
-$name = $_POST['itemName'];
-$description = $_POST['description'];
-$price = $_POST['price'];
-$category = $_POST['value'];
+
+
+$name = filter_input(INPUT_POST, 'itemName', FILTER_SANITIZE_STRING);
+$description = filter_input(INPUT_POST, 'description', FILTER_SANATIZE_STRING);
+$price = filter_input(INPUT_POST, 'price', FILTER_SANATIZE_NUMBER_FLOAT);
+$category = filter_input(INPUT_POST, 'value', FILTER_SANATIZE_STRING);
+
+if (
+    empty($name) || empty($description) || empty($price) || empty($category)
+) {
+    $message = '<p>Please fill all empty form fields</p>';
+    include 'index.php';
+    exit;
+}
 
 require "db-connect.php";
 $db = dbConnect();
 
-$query = 'INSERT INTO inventory (name, description, price, category_id) 
+$sql = 'INSERT INTO inventory (name, description, price, category_id) 
           VALUES(:name, :description, :price, :categoryID)';
-    $statement = $db->prepare($query);
+    $stmt = $db->prepare($query);
     
-    $statement->bindValue(':name', $name);
-	$statement->bindValue(':description', $description);
-	$statement->bindValue(':price', $price);
-    $statement->bindValue(':categoryID', $category);
+    $stmt->bindValue(':name', $name. PDO::PARAM_STR);
+	$stmt->bindValue(':description', $description, PDO::PARAM_STR);
+	$stmt->bindValue(':price', $price, PDO::PARAM_STR);
+    $stmt->bindValue(':categoryID', $category, PDO::PARAM_STR);
     
-    $statement->execute();
-    $stmt->closeCursor();
-    // Return the indication of success (rows changed)
-    return $rowsChanged;
-    include 'index.php';
-    die();
+    $stmt->execute();
 
+    $rowsChanged = $stmt->rowCount();
+        // Close the database interaction
+        $stmt->closeCursor();
+        // Return the indication of success (rows changed)
+        return $rowsChanged;
+
+        if ($productOutcome === 1) {
+            $message = '<p>Product Successfully added!</p>';
+            include 'index.php';
+            exit;
+        } else {
+            $message = '<p>Sorry, failed to add product. Please try again</p>';
+            include 'index.php';
+            exit;
+        }
 ?>

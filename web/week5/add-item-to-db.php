@@ -5,10 +5,39 @@ $description = filter_input(INPUT_POST, 'description', FILTER_SANATIZE_STRING);
 $price = filter_input(INPUT_POST, 'price', FILTER_SANATIZE_NUMBER_FLOAT);
 $category = filter_input(INPUT_POST, 'category', FILTER_SANATIZE_STRING);
 
+// if (
+//     empty($name) || empty($description) || empty($price) || empty($category)
+// ) {
+//     $message = '<p>Please fill all empty form fields</p>';
+//     include 'index.php';
+//     exit;
+// }
+
 if (
-    empty($name) || empty($description) || empty($price) || empty($category)
+    empty($name) 
 ) {
-    $message = '<p>Please fill all empty form fields</p>';
+    $message = '<p>Please fill in the name field</p>';
+    include 'index.php';
+    exit;
+}
+if (
+    empty($description)
+) {
+    $message = '<p>Please fill in the description field</p>';
+    include 'index.php';
+    exit;
+}
+if (
+    empty($price)
+) {
+    $message = '<p>Please fill in the price field</p>';
+    include 'index.php';
+    exit;
+}
+if (
+    empty($category)
+) {
+    $message = '<p>Please fill in the category</p>';
     include 'index.php';
     exit;
 }

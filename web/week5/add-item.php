@@ -28,7 +28,7 @@
             <br>
         <!-- Description -->
             <label for="description"> Description:
-            <input type="textarea" name="description" id="description" placeholder="e.g Perfect for a colege student. Gently used. etc..." required>
+            <input type="text" name="description" id="description" placeholder="e.g Perfect for a colege student. Gently used. etc..." required>
             </label>
             <br>
         <!-- Price -->
@@ -43,8 +43,6 @@
                     <option value="3" name="3" id="3">Bicycles</option>
                 </select>
             </label>
-
-            
 
             <input type="submit" value="Add item to JakesList" name="add-item">
     </form>

@@ -38,11 +38,13 @@
             <br>
             <label for="category"> Category
                 <select name="category" id="category">
-                    <option value="1">Motorcycles</option>
-                    <option value="2">Automobiles</option>
-                    <option value="3">Bicycles</option>
+                    <option value="1" name="1" id="1">Motorcycles</option>
+                    <option value="2" name="2" id="2">Automobiles</option>
+                    <option value="3" name="3" id="3">Bicycles</option>
                 </select>
             </label>
+
+            
 
             <input type="submit" value="Add item to JakesList" name="add-item">
     </form>
@@ -60,4 +62,5 @@
                 // {
                 //     echo '<option value="' . $row['id'] . '">' . $row['name'] . '</option>'; 
                 // }
-            ?>
+
+                

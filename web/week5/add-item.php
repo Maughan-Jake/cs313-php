@@ -47,8 +47,6 @@
 
             <input type="submit" value="Add item to JakesList" name="add-item">
     </form>
-
-
 </body>
 </html>
 

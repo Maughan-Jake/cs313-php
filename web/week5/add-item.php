@@ -1,4 +1,4 @@
-<?php include('add-item-to-db.php') ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

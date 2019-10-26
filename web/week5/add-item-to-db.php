@@ -20,7 +20,7 @@ $sql = 'INSERT INTO inventory (name, description, price, customer_id, category_i
         VALUES(:name, :description, :price, 1, :categoryID)';
     $stmt = $db->prepare($sql);
     
-    $stmt->bindValue(':name', $name. PDO::PARAM_STR);
+    $stmt->bindValue(':name', $name, PDO::PARAM_STR);
 	$stmt->bindValue(':description', $description, PDO::PARAM_STR);
 	$stmt->bindValue(':price', $price, PDO::PARAM_STR);
     $stmt->bindValue(':categoryID', $category, PDO::PARAM_STR);

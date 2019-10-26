@@ -27,19 +27,10 @@ $sql = 'INSERT INTO inventory (name, description, price, customer_id, category_i
     
     $stmt->execute();
 
-    $rowsChanged = $stmt->rowCount();
-        // Close the database interaction
-        $stmt->closeCursor();
-        // Return the indication of success (rows changed)
-        return $rowsChanged;
-
-        if ($productOutcome === 1) {
-            $message = '<p>Product Successfully added!</p>';
-            include 'index.php';
-            exit;
-        } else {
-            $message = '<p>Sorry, failed to add product. Please try again</p>';
-            include 'index.php';
-            exit;
-        }
+    // Close the database interaction
+    $stmt->closeCursor();
+    $message = '<p>Product Successfully added!</p>';
+    include 'index.php';
+    exit;
+        
 ?>

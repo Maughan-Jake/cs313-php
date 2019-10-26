@@ -29,8 +29,9 @@ $sql = 'INSERT INTO inventory (name, description, price, customer_id, category_i
 
     // Close the database interaction
     $stmt->closeCursor();
+
     $message = '<p>Product Successfully added!</p>';
-    include 'index.php';
+    header('location: index.php');
     exit;
         
 ?>

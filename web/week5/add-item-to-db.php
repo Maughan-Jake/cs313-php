@@ -18,7 +18,7 @@ $query = 'INSERT INTO inventory(name, description, price, category_id) VALUES(:n
     
     $statement->execute();
 
-    header("Location:index.php");
+    include 'index.php';
     die();
 
 ?>

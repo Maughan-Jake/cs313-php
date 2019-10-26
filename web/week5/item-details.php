@@ -33,7 +33,7 @@ $db = dbConnect();
             customer.last_name, customer.email
             FROM inventory
             INNER JOIN customer ON customer_id = customer.id 
-            WHERE customer.id=:id');
+            WHERE inventory.id=:id');
             $stmt->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
             $stmt->execute();
             $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);

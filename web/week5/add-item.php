@@ -28,7 +28,7 @@
             <br>
         <!-- Description -->
             <label for="description"> Description:
-            <input type="text" name="description" id="description" placeholder="e.g Perfect for a colege student. Gently used. etc..." required>
+            <input type="text" name="itemDescription" id="description" placeholder="e.g Perfect for a college student. Gently used. etc..." required>
             </label>
             <br>
         <!-- Price -->

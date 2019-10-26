@@ -29,7 +29,7 @@ $db = dbConnect();
 
     <div id="item-description">
         <?php
-            $stmt = $db->prepare('select * FROM cusomer WHERE id=:id');
+            $stmt = $db->prepare('select * FROM customer WHERE id=:id');
             $stmt->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
             $stmt->execute();
             $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);

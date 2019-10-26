@@ -29,7 +29,11 @@ $db = dbConnect();
 
     <div id="item-description">
         <?php
-            $stmt = $db->prepare('select * from inventory WHERE id=:id');
+            $stmt = $db->prepare('select inventory.name, inventory.description, inventory.price, customer.first_name,
+            customer.last_name, customer.email
+            FROM inventory
+            INNER JOIN customer ON customer_id = customer.id 
+            WHERE id=:id');
             $stmt->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
             $stmt->execute();
             $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);

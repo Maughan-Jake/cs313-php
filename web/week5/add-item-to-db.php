@@ -3,7 +3,7 @@
 $name= $_POST['itemName'];
 $description = $_POST['description'];
 $price = $_POST['price'];
-$category = $_POST['id'];
+$category = $_POST['value'];
 
 require "db-connect.php";
 $db = dbConnect();

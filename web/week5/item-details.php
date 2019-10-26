@@ -43,7 +43,7 @@ $db = dbConnect();
                 echo '<h3 class="title">' . $row['name'] . '</h3>';
                 echo '<div id="description-text">';
                 echo '<p class="description">' . $row['description'] . '</p>';
-                echo '<p class="description"> Posted by: ' . $row['first_name'] . ' ' . $row['last_name'] . '<br> <p>Email: ' . $row['email'] . ' For more details and pictures</p>';
+                echo '<p class="description"> Posted by: ' . $row['first_name'] . ' ' . $row['last_name'] . '<br> <p class="description">Email: ' . $row['email'] . ' For more details and pictures</p>';
                 echo '</div>';
                 echo '<p class="price-box">' . $row['price']  . '</p>';
                 // join the tables so I can also echo the seller name and email as contact info

@@ -20,7 +20,7 @@
 
     <h1>Add New Item to Jakeslist</h1>
 
-    <form action="">
+    <form action="add-item-to-db.php" method="post"> 
         <!-- Name -->
             <label for="itemName"> Item Name:
             <input type="text" name="itemName" id="itemName" placeholder="e.g 2012 Honda Accord">

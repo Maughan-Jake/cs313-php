@@ -53,13 +53,14 @@
 </html>
 
 <?php 
-                // $stmt = $db->prepare('select * from category');
-                // $stmt->execute();
-                // $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    
-                // foreach ($rows as $row)
-                // {
-                //     echo '<option value="' . $row['id'] . '">' . $row['name'] . '</option>'; 
-                // }
+    // $stmt = $db->prepare('select * from category');
+    // $stmt->execute();
+    // $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    // foreach ($rows as $row)
+    // {
+    //     echo '<option value="' . $row['id'] . '">' . $row['name'] . '</option>'; 
+    // }
+?>
 
                 

@@ -36,30 +36,12 @@
             <input type="number" name="price" id="price" step="0.01" placeholder="6800.99">
             </label>
             <br>
-        <!-- Customer_id -->
-            <!-- Link to user session -->
-            <!-- <label for="">
-            <input type="text" name="" id="">
-            </label> -->
-        <!-- Category_id -->
             <label for="category"> Category
-            <select name="category" id="category">
-            <?php 
-                $stmt = $db->prepare('select * from category');
-                $stmt->execute();
-                $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    
-                foreach ($rows as $row)
-                {
-                    echo '<option value="' . $row['id'] . '">' . $row['name'] . '</option>'; 
-                }
-            ?>
-
-                <!-- <select name="category" id="category">
+                <select name="category" id="category">
                     <option value="1">Motorcycles</option>
                     <option value="2">Automobiles</option>
                     <option value="3">Bicycles</option>
-                </select> -->
+                </select>
             </label>
 
             <input type="submit" value="Add item to JakesList" name="add-item">
@@ -68,3 +50,14 @@
 
 </body>
 </html>
+
+<?php 
+                // $stmt = $db->prepare('select * from category');
+                // $stmt->execute();
+                // $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    
+                // foreach ($rows as $row)
+                // {
+                //     echo '<option value="' . $row['id'] . '">' . $row['name'] . '</option>'; 
+                // }
+            ?>

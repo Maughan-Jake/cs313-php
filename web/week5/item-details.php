@@ -46,8 +46,11 @@ $db = dbConnect();
                 echo '<p class="description"> Posted by: ' . $row['first_name'] . ' ' . $row['last_name'] . '<br> <p class="description">Email: ' . $row['email'] . ' for more details and pictures</p>';
                 echo '</div>';
                 echo '<p class="price-box">' . $row['price']  . '</p>';
-                // join the tables so I can also echo the seller name and email as contact info
+                echo '<a href="update-item.php">Update Item</a>';
+                echo '<a href="delete-item.php">Delete Item</a>';
             }
+
+
         ?>
     </div>
 </body>

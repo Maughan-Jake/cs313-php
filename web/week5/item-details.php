@@ -46,8 +46,8 @@ $db = dbConnect();
                 echo '<p class="description"> Posted by: ' . $row['first_name'] . ' ' . $row['last_name'] . '<br> <p class="description">Email: ' . $row['email'] . ' for more details and pictures</p>';
                 echo '</div>';
                 echo '<p class="price-box">' . $row['price']  . '</p>';
-                echo '<a href="update-item.php?id=' . $row['id'] . '">Update Item</a>';
-                echo '<a href="delete-item.php?id=' . $row['id'] . '">Delete Item</a>';
+                echo '<a href="update-item.php?id="' . $row['id'] . '">Update Item</a>';
+                echo '<a href="delete-item.php?id="' . $row['id'] . '">Delete Item</a>';
             }
 
         ?>

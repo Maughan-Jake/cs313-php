@@ -50,7 +50,7 @@
             </label>
 
             <input type="submit" name="action" value="Update">
-            <input type="hidden" name="invId" value="<?php $_GET['id'] ?>">
+            <input type="hidden" name="id" value="<?php $_GET['id'] ?>">
     </form>
 </body>
 </html>

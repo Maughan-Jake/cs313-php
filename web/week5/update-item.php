@@ -1,13 +1,13 @@
 <?php
-require "db-connect.php";
-$db = dbConnect();
+    // require "db-connect.php";
+    // $db = dbConnect();
 
-$stmt = $db->prepare('SELECT name, description, price, category_id
-                        FROM inventory
-                        WHERE id = id');
-$stmt->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
-$stmt->execute();
-$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    // $stmt = $db->prepare('SELECT name, description, price, category_id
+    //                         FROM inventory
+    //                         WHERE id = id');
+    // $stmt->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
+    // $stmt->execute();
+    // $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>

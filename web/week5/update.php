@@ -15,7 +15,8 @@
         $category = filter_input(INPUT_POST, 'category');
         $invId = filter_input(INPUT_POST, 'invId', FILTER_SANITIZE_NUMBER_INT);
 
-        echo $name;
+        echo $name, $description, $price, $category, $invId ;
+        
         updateItem($invId, $name, $description, $price, $category);
         break;
     }

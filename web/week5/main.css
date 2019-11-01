@@ -186,3 +186,10 @@ input[type=text], input[type=number], input[type=textarea], select {
 .update-button:hover {
     color: #bf4e30;
 }
+
+/****************************************************
+ Delete Page
+****************************************************/
+.del-text {
+    text-align: center;
+}

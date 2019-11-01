@@ -170,3 +170,15 @@ input[type=text], input[type=number], input[type=textarea], select {
     padding: 5px;
     text-align: center;
 }
+
+.update-button {
+    background: #40798c;
+    color: #e5eafa;
+    font-size: 30px;
+    width: 20%;
+    margin: 10px auto 25px auto;
+    border-radius: 15px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+}

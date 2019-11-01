@@ -9,38 +9,44 @@
 
     switch ($action) {
         case 'Update':
-        $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
-        $description = filter_input(INPUT_POST, 'description', FILTER_SANITIZE_STRING);
-        $price = filter_input(INPUT_POST, 'price', FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
-        $category = filter_input(INPUT_POST, 'category');
-        $id = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
+            $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+            $description = filter_input(INPUT_POST, 'description', FILTER_SANITIZE_STRING);
+            $price = filter_input(INPUT_POST, 'price', FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
+            $category = filter_input(INPUT_POST, 'category');
+            $id = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
 
-        if (
-            empty($name)
-        ) {
-            echo "Name is empty";
-        } else if (
-            empty($description)
-        ) {
-            echo "description is empty";
-        } else if (
-            empty($price)
-        ) {
-            echo "price is empty";
-        } else if (
-            empty($category)
-        ) {
-            echo "category is empty";
-        } else if (
-            empty($id)
-        ) {
-            echo "id is empty";
-        }
+            if (
+                empty($name)
+            ) {
+                echo "Name is empty";
+            } else if (
+                empty($description)
+            ) {
+                echo "description is empty";
+            } else if (
+                empty($price)
+            ) {
+                echo "price is empty";
+            } else if (
+                empty($category)
+            ) {
+                echo "category is empty";
+            } else if (
+                empty($id)
+            ) {
+                echo "id is empty";
+            }
 
-        echo $name, $description, $price, $category, $id ;
-        
-        updateItem($id, $name, $description, $price, $category);
-        break;
+            echo $name, $description, $price, $category, $id ;
+            
+            updateItem($id, $name, $description, $price, $category);
+            break;
+
+        case 'Delete':
+            $id = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
+            deleteProduct($id);
+            break;
+
     }
 
     function updateItem ($id, $name, $description, $price, $category_id) {

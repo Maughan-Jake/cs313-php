@@ -2,7 +2,7 @@
 require "db-connect.php";
 $db = dbConnect();
 
-$stmt = $db->prepare('SELECT id, name, description, price, category_id
+$stmt = $db->prepare('SELECT name, description, price, category_id
                         FROM inventory
                         WHERE id = id');
 $stmt->bindValue(':id', $_GET['id'], PDO::PARAM_INT);

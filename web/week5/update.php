@@ -19,23 +19,19 @@
             empty($name)
         ) {
             echo "Name is empty";
-        }
-        if (
+        } else if (
             empty($description)
         ) {
             echo "description is empty";
-        }
-        if (
+        } else if (
             empty($price)
         ) {
             echo "price is empty";
-        }
-        if (
+        } else if (
             empty($category)
         ) {
             echo "category is empty";
-        }
-        if (
+        } else if (
             empty($id)
         ) {
             echo "id is empty";

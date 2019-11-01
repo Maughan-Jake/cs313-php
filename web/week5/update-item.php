@@ -32,12 +32,14 @@
                                 WHERE id = id');
             $stmt->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
             $stmt->execute();
-            // $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-            // echo $_GET['id'];
-            // echo $rows['name'];
-            // echo $rows['id'];
-            // echo $rows['category_id'];
+            foreach ($rows as $row) {
+            echo $_GET['id'];
+            echo $rows['name'];
+            echo $rows['id'];
+            echo $rows['category_id'];
+        }
             ?>
         <!-- Name -->
             <label for="itemName"> Item Name:

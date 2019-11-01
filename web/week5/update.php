@@ -75,7 +75,7 @@
 
     function deleteProduct($id) {
         $db = dbConnect();
-        $sql = 'DELETE FROM inventory WHERE invId = :invId';
+        $sql = 'DELETE FROM inventory WHERE id = :id';
         $stmt = $db->prepare($sql);
         $stmt->bindValue(':id', $id, PDO::PARAM_INT);
         $stmt->execute();

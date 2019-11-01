@@ -182,3 +182,7 @@ input[type=text], input[type=number], input[type=textarea], select {
     text-align: center;
     text-decoration: none;
 }
+
+.update-button:hover {
+    color: #bf4e30;
+}

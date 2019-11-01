@@ -1,13 +1,6 @@
 <?php
-    // require "db-connect.php";
-    // $db = dbConnect();
-
-    // $stmt = $db->prepare('SELECT name, description, price, category_id
-    //                         FROM inventory
-    //                         WHERE id = id');
-    // $stmt->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
-    // $stmt->execute();
-    // $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    require "db-connect.php";
+    $db = dbConnect();
 ?>
 
 <!DOCTYPE html>
@@ -33,6 +26,19 @@
     <h1>Update Item in Jakeslist</h1>
 
     <form action="update.php" method="post"> 
+        <?php 
+            $stmt = $db->prepare('SELECT name, description, price, category_id
+                                FROM inventory
+                                WHERE id = id');
+            $stmt->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
+            $stmt->execute();
+            $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+            echo $_GET['id'];
+            echo $rows['name'];
+            echo $rows['id'];
+            echo $rows['category_id'];
+            ?>
         <!-- Name -->
             <label for="itemName"> Item Name:
             <input type="text" name="itemName" id="itemName" <?php echo "value='$rows[name]'";?> required>
@@ -56,7 +62,7 @@
                 </select>
             </label>
 
-            <input type="submit" value="Add item to JakesList" name="add-item">
+            <input type="submit" value="Update item in JakesList" name="update-item">
     </form>
 </body>
 </html>

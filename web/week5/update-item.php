@@ -26,24 +26,9 @@
     <h1>Update Item in Jakeslist</h1>
 
     <form action="update.php" method="post"> 
-        <?php 
-            $stmt = $db->prepare('SELECT name, description, price, category_id
-                                FROM inventory
-                                WHERE id = id');
-            $stmt->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
-            $stmt->execute();
-            $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-            foreach ($rows as $row) {
-            echo $_GET['id'];
-            echo $rows['name'];
-            echo $rows['id'];
-            echo $rows['category_id'];
-        }
-            ?>
         <!-- Name -->
-            <label for="itemName"> Item Name:
-            <input type="text" name="itemName" id="itemName" <?php echo "value='$rows[name]'";?> required>
+            <label for="name"> Item Name:
+            <input type="text" name="name" id="itemName" <?php echo "value='$rows[name]'";?> required>
             </label>
             <br>
         <!-- Description -->
@@ -64,47 +49,8 @@
                 </select>
             </label>
 
-            <input type="submit" value="Update item in JakesList" name="update-item">
+            <input type="submit" name="action" value="Update">
+            <input type="hidden" name="invId" value="<?php $_GET['id'] ?>">
     </form>
 </body>
 </html>
-
-                
-<?php
-    function updateItem ($id, $name, $description, $price, $category_id) {
-        $sql = 'UPDATE inventory 
-        SET(name = :name, description = :description, price = :price, category_id = :category_id) 
-        WHERE id = :id';
-        
-        $stmt = $db->prepare($sql);
-
-        $stmt->bindValue(':id', $id, PDO::PARAM_INT);
-        $stmt->bindValue(':name', $name, PDO::PARAM_STR);
-        $stmt->bindValue(':description', $description, PDO::PARAM_STR);
-        $stmt->bindValue(':price', $price, PDO::PARAM_STR);
-        $stmt->bindValue(':category_id', $category_id, PDO::PARAM_STR);
-        
-        $stmt->execute();
-
-        // Close the database interaction
-        $stmt->closeCursor();
-
-        $message = '<p>Product Successfully updated!</p>';
-        header('location: index.php');
-        exit;
-    }
-
-    function deleteProduct($id) {
-        $db = dbConnect();
-        $sql = 'DELETE FROM inventory WHERE invId = :invId';
-        $stmt = $db->prepare($sql);
-        $stmt->bindValue(':id', $id, PDO::PARAM_INT);
-        $stmt->execute();
-        $stmt->closeCursor();
-
-        $message = '<p>Product Successfully Deleted!</p>';
-        header('location: index.php');
-        exit;
-    }
-        
-?>

@@ -15,14 +15,15 @@
         $category = filter_input(INPUT_POST, 'category');
         $invId = filter_input(INPUT_POST, 'invId', FILTER_SANITIZE_NUMBER_INT);
 
+        echo $name;
         updateItem($invId, $name, $description, $price, $category);
         break;
     }
 
     function updateItem ($id, $name, $description, $price, $category_id) {
         $sql = 'UPDATE inventory 
-        SET(name = :name, description = :description, price = :price, category_id = :category_id) 
-        WHERE id = :id';
+                SET(name = :name, description = :description, price = :price, category_id = :category_id) 
+                WHERE id = :id';
         
         $stmt = $db->prepare($sql);
 

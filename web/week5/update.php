@@ -48,8 +48,9 @@
     }
 
     function updateItem ($id, $name, $description, $price, $category_id) {
-        $sql = 'UPDATE inventory 
-                SET(name = :name, description = :description, price = :price, category_id = :category_id) 
+       $db = dbConnect();
+       $sql = 'UPDATE inventory 
+                SET name = :name, description = :description, price = :price, category_id = :category_id 
                 WHERE id = :id';
         
         $stmt = $db->prepare($sql);

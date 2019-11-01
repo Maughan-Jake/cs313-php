@@ -13,7 +13,7 @@
         $description = filter_input(INPUT_POST, 'description', FILTER_SANITIZE_STRING);
         $price = filter_input(INPUT_POST, 'price', FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
         $category = filter_input(INPUT_POST, 'category');
-        $id = filter_input(INPUT_POST, $_GET['id'], FILTER_SANITIZE_NUMBER_INT);
+        $id = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
 
         if (
             empty($name)
